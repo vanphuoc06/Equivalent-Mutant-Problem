@@ -64,17 +64,17 @@ flowchart TD
     Z3 -- "Syntax Error / Unknown" --> CEGAR
     CEGAR -- "Refined Invariants" --> Prompt
     
-    classDef startFill fill:#ffb3e6,stroke:#333,stroke-width:2px;
+    classDef startFill fill:#f9e6f2,stroke:#cc99bb,stroke-width:2px,color:#333;
     class Start startFill;
-    classDef orange fill:#fff5e6,stroke:#ff6600,stroke-width:2px;
+    classDef orange fill:#fff3e6,stroke:#dd9966,stroke-width:2px,color:#333;
     class Phase2,Phase3,Phase4,Phase5,Phase7,Phase6 orange;
-    classDef blue fill:#e6f3ff,stroke:#0066cc,stroke-width:2px;
+    classDef blue fill:#e6f2ff,stroke:#99bbdd,stroke-width:2px,color:#333;
     class Prompt,CEGAR blue;
-    classDef diamond fill:#e6f3ff,stroke:#0066cc,stroke-width:2px;
+    classDef diamond fill:#e6f2ff,stroke:#99bbdd,stroke-width:2px,color:#333;
     class Consensus diamond;
-    classDef purple fill:#f2e6ff,stroke:#6600cc,stroke-width:2px;
+    classDef purple fill:#f2e6ff,stroke:#bb99dd,stroke-width:2px,color:#333;
     class UNSAT,SAT,Indet purple;
-    classDef db fill:#fff,stroke:#333,stroke-width:2px;
+    classDef db fill:#f9f9f9,stroke:#999999,stroke-width:2px,color:#333;
     class Z3 db;
 ```
 
