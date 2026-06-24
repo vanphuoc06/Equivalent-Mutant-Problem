@@ -1,0 +1,7 @@
+z3-solver==4.12.2.0
+openai>=1.0.0
+python-dotenv
+tabulate
+astpretty
+pytest
+setuptools<81
