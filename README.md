@@ -1,6 +1,6 @@
-# NSEV: Neuro-Symbolic Equivalence Verifier
-
-NSEV is a research prototype for the **Equivalent Mutant Problem (EMP)**. It follows the paper's conservative neuro-symbolic design: LLMs may propose candidate semantic artefacts, but only the typed verification bridge and Z3 solver may justify a verdict.
+# Introduction
+Dự án xử lý một số vấn đề về **Equivalent Mutant Problem (EMP)**
+Hiện tại dự án vẫn đang được phát triển bởi nhóm nghiên cứu của chúng tôi.Nó giải quyết một số vấn đề về **Equivalent Mutant Problem (EMP)** 
 
 ## What this repository implements
 
@@ -46,14 +46,3 @@ Run smoke benchmarks:
 ```bash
 python3 scripts/run_benchmarks.py
 ```
-
-## Relation to the paper
-
-This code is aligned with the paper's revised claims:
-
-- LLM output is not treated as a final classification.
-- Preconditions, invariants, summaries, and contracts must be validated before affecting a verdict.
-- SAT produces `Non-equivalent`; UNKNOWN, unsupported translation, or validation failure produces `Indeterminate`.
-- Bounded reasoning is reported separately as `Equivalent under Bound`.
-
-The paper reports the full 150-mutant benchmark results. This repository's smoke benchmarks are only executable examples, not a replacement for the full replication package.
